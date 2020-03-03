@@ -22,7 +22,7 @@ public class Respawn : MonoBehaviour
 
     private void Spawn ()
     {
-        //создаем по два рандомных объекта из массива префбов и приклыдваем силу для движения
+        //создаем по два рандомных объекта из массива префбов и приклыдваем силу для движения   
         GameObject temp = Instantiate(Shell[Random.Range(0, Shell.Length)], _pos1, Quaternion.identity) as GameObject;
         var _rb = temp.GetComponent<Rigidbody2D>();
         _rb.AddForce(Vector2.left * Power);

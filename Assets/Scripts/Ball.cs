@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    private float _jump;
+    public float Jump;
     private Rigidbody2D _rb;
     void Start()
     {
@@ -14,7 +14,8 @@ public class Ball : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            _rb.gravityScale = _rb.gravityScale * -1;
+            _rb.gravityScale = _rb.gravityScale * -Jump;
         }
     }
+
 }
