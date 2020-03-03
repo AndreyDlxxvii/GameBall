@@ -9,22 +9,12 @@ public class Ball : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        
     }
-
-    void FixedUpdate()
-    {
-        Jump();
-    }
-
-
     void Update()
     {
-        _jump = Input.GetAxis("Jump");
-        print(_jump);
-    }
-    private void Jump()
-    {
-        _rb.gravityScale = _rb.gravityScale * _jump;
+        if (Input.GetKeyDown("space"))
+        {
+            _rb.gravityScale = _rb.gravityScale * -1;
+        }
     }
 }

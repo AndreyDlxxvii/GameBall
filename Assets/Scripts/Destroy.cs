@@ -6,7 +6,7 @@ public class Destroy : MonoBehaviour
 {
     private void OnTriggerExit2D(Collider2D collision)
     {
-        print("пуф");
+        //уничтожение блоков при покидании сцены
         Destroy(gameObject);
     }
 }
