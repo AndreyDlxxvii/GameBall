@@ -5,20 +5,18 @@ using UnityEngine;
 
 public class BorderManagement : MonoBehaviour
 {
-    private BoxCollider2D collBox;
-    private RectTransform rectTrans;
+    private BoxCollider2D _collBox;
+    private RectTransform _rectTrans;
     
     void Start()
     {
-        rectTrans = GetComponent<RectTransform>();
-        collBox = GetComponent<BoxCollider2D>();
-        print(rectTrans.sizeDelta);
+        _rectTrans = GetComponent<RectTransform>();
+        _collBox = GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        collBox.offset = new Vector2(-rectTrans.sizeDelta.x/2,0);
-        collBox.size = new Vector2(1, rectTrans.sizeDelta.y);
+        _collBox.offset = new Vector2(-_rectTrans.sizeDelta.x/2,0);
+        _collBox.size = new Vector2(1, _rectTrans.sizeDelta.y);
     }
 }

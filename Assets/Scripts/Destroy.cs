@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
+    //уничтожение блоков при покидании сцены
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //уничтожение блоков при покидании сцены
         Destroy(gameObject);
     }
 }

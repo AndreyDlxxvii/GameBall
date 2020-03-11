@@ -12,11 +12,9 @@ public class Ball : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = Gravity;
-        
     }
     void Update()
     {
-        print(_val);
         if (Input.GetKeyDown("space"))
         {
             _rb.gravityScale = _rb.gravityScale * -1;
