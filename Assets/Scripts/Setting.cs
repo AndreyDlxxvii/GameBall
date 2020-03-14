@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Setting : MonoBehaviour
 {
-    private int val;
+    private int _val;
 public void SlidEvent (Slider sl)
     {
-        val = (int)sl.value;
+        _val = (int)sl.value;
     }
 }

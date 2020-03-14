@@ -7,7 +7,6 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody2D _rb;
     public float Gravity;
-    private int _val;
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -19,9 +18,5 @@ public class Ball : MonoBehaviour
         {
             _rb.gravityScale = _rb.gravityScale * -1;
         }
-    }
-    public void SlidEvent(Slider sl)
-    {
-        _val = (int)sl.value;
     }
 }
