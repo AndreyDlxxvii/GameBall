@@ -16,7 +16,7 @@ public class BorderManagement : MonoBehaviour
 
     void Update()
     {
-        _collBox.offset = new Vector2(-_rectTrans.sizeDelta.x/2,0);
-        _collBox.size = new Vector2(1, _rectTrans.sizeDelta.y);
+        _collBox.offset = new Vector2(0,0);
+        _collBox.size = new Vector2(_rectTrans.sizeDelta.x, _rectTrans.sizeDelta.y);
     }
 }

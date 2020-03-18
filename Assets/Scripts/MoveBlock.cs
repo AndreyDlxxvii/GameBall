@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveBlock : MonoBehaviour
 {
-    private float _speed = 0.05f;
+    private float _speed = 0.02f;
     private Vector2 _vector2;
 
     private void Start()

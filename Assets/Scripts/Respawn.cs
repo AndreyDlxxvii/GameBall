@@ -5,11 +5,11 @@ using UnityEngine;
 public class Respawn : MonoBehaviour
 {
     public GameObject[] Shell;
-    public float Power;
+  //  public float Power;
     //позиции респа блоков на экране
     public Camera ThisCam;
     public RectTransform ThisCanvas;
-    private Vector2 _pos1, _pos2;
+   // private Vector2 _pos1, _pos2;
     void Start()
     {
         //вызываем функцию респавна блоков каждые 5 сек

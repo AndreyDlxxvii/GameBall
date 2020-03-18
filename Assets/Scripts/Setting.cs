@@ -6,8 +6,17 @@ using UnityEngine.UI;
 public class Setting : MonoBehaviour
 {
     private int _val;
-public void SlidEvent (Slider sl)
+
+    private void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+    public void SlidEvent (Slider sl)
     {
         _val = (int)sl.value;
+    }
+    private void Update()
+    {
+        Debug.Log(_val);
     }
 }

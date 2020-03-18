@@ -155,7 +155,6 @@ MonoBehaviour:
   - {fileID: 1298856486098835495, guid: aac8e466a37870b4ab86f440a7437762, type: 3}
   - {fileID: 6715482869467861901, guid: ceb6ec2a9bba86e4b814bec80babcde6, type: 3}
   - {fileID: 3484110850330445247, guid: 06d96a5d66f2dcd4dabd4e34e5ded05b, type: 3}
-  Power: 50
   ThisCam: {fileID: 1449259079}
   ThisCanvas: {fileID: 1332827896}
 --- !u!4 &1282597374
@@ -355,7 +354,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379734675}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
