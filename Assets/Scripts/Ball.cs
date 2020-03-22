@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody2D _rb;
     public float Gravity;
+    public GameObject Setting;
 
     private void OnTriggerExit2D(Collider2D collision)
     {
